@@ -3,7 +3,7 @@ CFLAGS ?= -O2 -Wall -Wextra
 PREFIX ?= $(HOME)/.local
 BINDIR ?= $(PREFIX)/bin
 
-.PHONY: all install uninstall clean
+.PHONY: all install uninstall clean test
 
 all: jenv
 
@@ -19,3 +19,6 @@ uninstall:
 
 clean:
 	rm -f jenv
+
+test: jenv
+	bash ./test.sh
