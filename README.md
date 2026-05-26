@@ -1,4 +1,4 @@
-# jenv
+# jenv (enVjump)
 
 `jenv` pins a startup directory and restores either a Conda environment or a uv virtual environment for future interactive bash shells.
 
